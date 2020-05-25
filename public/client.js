@@ -1,4 +1,6 @@
-const socket = io(window.location.href);
+const socket = io(
+  "https://testcallnode.herokuapp.com/" || window.location.href
+);
 //location of where server is hosting socket app
 
 socket.on("chat-message", (data) => {
